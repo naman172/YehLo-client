@@ -1,0 +1,14 @@
+#formPage-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    /* background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%); */
+    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    /* background-image: linear-gradient(to top, rgba(170,229,245) 0%, rgba(22,36,61) 100%); */
+}
+
+
+
+  

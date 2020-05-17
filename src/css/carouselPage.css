@@ -1,0 +1,21 @@
+.carousel-page-container{
+    overflow: visible;
+    scroll-snap-type: y mandatory;
+}
+
+#all-listings{
+    min-height: 100vh;
+    background-color: ivory;
+}
+
+.child{
+    scroll-snap-align: start;
+}
+
+.loading{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+}

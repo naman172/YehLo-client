@@ -1,0 +1,62 @@
+.form{
+    border-radius: 8px;
+    height: 65%;
+    box-shadow: 0 0 25px rgba(0,0,0,.3);
+    width: 50%;
+    min-width: 345px;
+    background-color: whitesmoke;
+    margin-top: 45px;
+    display:flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .form {
+      width: 60%;
+    }
+  }
+
+.form-input-container{
+    width:75%;
+}
+
+.spacing {
+    height: 14px;
+}  
+
+.image-upload{
+    
+    font-size: 1.1em;
+    outline: none;
+}
+
+.message{
+    width: 100%;
+    margin-bottom: 28px;
+    margin-top: 32px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.upload-label {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-right: 6px;
+}
+
+.MuiButton-root.upload-button{
+    margin-left: 15%;
+    height: 50px;
+    width:70%;
+    background-color: #4287f5;
+    color: white;
+    text-transform: none;
+    font-size: 1em;
+    margin-top: 24px;
+}
+
+.MuiButton-root.upload-button:hover{
+    background-color: #4287f5;
+}

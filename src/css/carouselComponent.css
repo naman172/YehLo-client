@@ -1,0 +1,23 @@
+div.carousel-inner, .carousel-item{
+    height: inherit;
+}
+
+.slide-image{
+    object-fit: contain;
+    height: inherit;
+    width: inherit;
+}
+
+.carousel-caption{
+    color: rgba(0,0,0,0.8);
+}
+
+.MuiIconButton-root.scroll-down, .MuiIconButton-root.scroll-down:hover{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    background-color: ivory;
+    color: black;
+    z-index: 10;
+    outline: none;
+}

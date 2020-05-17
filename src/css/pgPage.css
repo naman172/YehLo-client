@@ -1,0 +1,21 @@
+.pgPage-container{
+    padding-top: 64px; 
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.not-found{
+    display: flex; 
+    height:inherit;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-size: 2em;
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    font-weight: 600;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
