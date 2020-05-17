@@ -41,10 +41,14 @@ class PGPage extends Component {
         </div>
       );
     } else {
-      if (!this.state.error) {
+      if (!this.state.error && this.state.data.data) {
         return <div className="pgPage-container">
-            <div className="pg-photo"></div>
-            <div className="pg-info">
+            <div className="pg-photo">
+                <img src={this.state.data.data.imageURL}/>
+            </div>
+            <div className="pg-info" style={{padding:"16px", width:"50%"}}>
+                <h1 style ={{color:"white"}}>{this.state.data.data.name}</h1>
+                <h4 style ={{color:"white"}}>{this.state.data.data.address}</h4>
             </div>
         </div>;
       } else {
