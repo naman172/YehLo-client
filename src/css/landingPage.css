@@ -1,0 +1,55 @@
+.landing-subcontainer {
+  height: inherit;
+  width: 50%;
+}
+
+.arrow {
+  position: relative;
+  left: 6%;
+  top: 50%;
+  transform: scale(4) rotate(-90deg);
+}
+
+.land-question {
+  font-family: "Kalam", cursive;
+  font-size: 3em;
+}
+
+@media screen and (max-width: 900px) {
+  .land-question {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .land-question {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .land-question {
+    font-size: 1.8em;
+  }
+}
+
+.landing-text{
+    position: absolute;
+    top:40%;
+    left:50%;
+    text-align: center;
+}
+
+.MuiButton-root.yehlo{
+    margin-top: 8px;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 1.8em;
+    width: 113px;
+    font-family: 'Oswald', sans-serif;
+    outline:none;
+}
+
+.MuiButton-root.yehlo:hover {
+    background: rgba(0,0,0,0.9);
+}

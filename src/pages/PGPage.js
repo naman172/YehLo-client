@@ -43,7 +43,7 @@ class PGPage extends Component {
       if (!this.state.error && this.state.data.data) {
         return <div className="pgPage-container">
             <div className="pg-photo">
-                <img src={this.state.data.data.imageURL}/>
+                <img src={this.state.data.data.imageURL} alt={this.state.data.data.name}/>
             </div>
             <div className="pg-info" style={{padding:"16px", width:"50%"}}>
                 <h1 style ={{color:"white"}}>{this.state.data.data.name}</h1>

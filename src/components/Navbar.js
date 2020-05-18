@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   brand: {
     fontFamily: "'Oswald', sans-serif",
     fontSize: "1.9em",
+    cursor: "pointer",
   },
   even: {
     display: "flex",
@@ -35,7 +36,14 @@ export default function Navbar() {
         <div style={{ backgroundColor: "rgba(255,255,255,0.1)" }}>
           <Toolbar>
             <div className={classes.even}>
-              <div className={classes.brand}>YEH!O</div>
+              <div
+                className={classes.brand}
+                onClick={() => {
+                  window.location.href = "/";
+                }}
+              >
+                YEH!O
+              </div>
               <div>
                 <Tooltip title="List your Property">
                   <IconButton
