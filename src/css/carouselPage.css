@@ -19,3 +19,13 @@
     align-items:center;
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
 }
+
+.noListings{
+    height:inherit; 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color: rgba(0,0,0,0.7);
+    font-size: 2em;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

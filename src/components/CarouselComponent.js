@@ -9,7 +9,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 class CarouselComponent extends Component {
   handleScroll = () => {
     let location = document.getElementById("all-listings");
-    console.log(location);
     location.scrollIntoView({ behavior: "smooth" });
   };
   handleClick = (id) => {

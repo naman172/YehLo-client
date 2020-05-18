@@ -16,13 +16,12 @@ class PGPage extends Component {
       loading: true,
       error: false,
     });
-    Axios.get(`/pg/${id}`)
+    Axios.get(`https://us-central1-yehlo-round-2.cloudfunctions.net/api/pg/${id}`)
       .then((res) => {
         this.setState({
           data: res.data,
           loading: false,
         });
-        console.log(this.state.data.data.name);
       })
       .catch(() => {
         this.setState({

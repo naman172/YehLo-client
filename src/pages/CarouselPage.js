@@ -16,7 +16,7 @@ class CarouselPage extends Component {
       loading: true,
     });
     axios
-      .get("/pg")
+      .get("https://us-central1-yehlo-round-2.cloudfunctions.net/api/pg")
       .then((res) => {
         this.setState({
           listings: res.data,
@@ -29,22 +29,25 @@ class CarouselPage extends Component {
   };
 
   render() {
-    let cards = this.state.listings.map((pg) => (
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        md={4}
-        lg={3}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <ListingCard pg={pg} history={this.props.history}/>
-      </Grid>
-    ));
+    if (this.state.listings) {
+      var cards = this.state.listings.map((pg) => (
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={4}
+          lg={3}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          key={pg.pgId}
+        >
+          <ListingCard pg={pg} history={this.props.history} />
+        </Grid>
+      ));
+    }
     if (this.state.loading) {
       return (
         <div className="loading">
@@ -58,15 +61,20 @@ class CarouselPage extends Component {
         <div className="carousel-page-container">
           <section className="child">
             <div className="carousel">
-              <CarouselComponent listings={this.state.listings} history={this.props.history}/>
+              <CarouselComponent
+                listings={this.state.listings}
+                history={this.props.history}
+              />
             </div>
           </section>
           <section className="child">
             <div id="all-listings">
               <div style={{ padding: "76px 12px 0 12px" }}>
-                <Grid container spacing={3}>
+                {!cards?(<div className="noListings">
+                  No Listings Yet
+                </div>):(<Grid container spacing={3}>
                   {cards}
-                </Grid>
+                </Grid>)}
               </div>
             </div>
           </section>

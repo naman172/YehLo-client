@@ -43,7 +43,7 @@ class Form extends Component {
       formData.append("address", this.state.location);
       formData.append("name", this.state.name);
       axios
-        .post("/pg", formData)
+        .post("https://us-central1-yehlo-round-2.cloudfunctions.net/api/pg", formData)
         .then((res) => {
           this.setState({
             message: res.data.message,
