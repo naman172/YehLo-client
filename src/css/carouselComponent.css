@@ -9,7 +9,7 @@ div.carousel-inner, .carousel-item{
 }
 
 .carousel-caption{
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0);
 }
 
 .MuiIconButton-root.scroll-down, .MuiIconButton-root.scroll-down:hover{
